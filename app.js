@@ -149,6 +149,7 @@ function renderAgents() {
 
 function renderLinks() {
   document.getElementById('local-url').textContent = window.location.href;
+  document.getElementById('github-url').textContent = 'https://tjhart698.github.io/carve-chief-of-staff-dashboard/';
 }
 
 function renderAll() {
