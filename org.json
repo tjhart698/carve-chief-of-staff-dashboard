@@ -1,0 +1,110 @@
+{
+  "owner": {
+    "name": "Tyler Hart",
+    "title": "Owner / CEO",
+    "focus": [
+      "Final decisions",
+      "High-leverage relationships",
+      "Capital allocation",
+      "Strategic direction"
+    ]
+  },
+  "leader": {
+    "id": "carve",
+    "name": "Carve",
+    "title": "Chief of Staff AI",
+    "emoji": "🛠️",
+    "mission": "Clarify priorities, coordinate execution, reduce drag, and route work to specialist agents.",
+    "responsibilities": [
+      "Daily priority triage",
+      "Decision support",
+      "Agent coordination",
+      "Follow-up tracking",
+      "Risk flagging"
+    ],
+    "handsToOwner": [
+      "Irreversible external commitments",
+      "Material legal / tax / financial decisions",
+      "Hiring / firing decisions",
+      "Capital deployment that needs approval"
+    ]
+  },
+  "agents": [
+    {
+      "id": "operator",
+      "name": "Operator",
+      "title": "Execution & PM Agent",
+      "emoji": "📦",
+      "type": "isolated-agent + delegation-role",
+      "mission": "Turn goals into tracked tasks, owners, deadlines, and next actions.",
+      "owns": [
+        "Project plans",
+        "Meeting follow-ups",
+        "Task boards",
+        "SOP drafts",
+        "Accountability checklists"
+      ],
+      "inputs": ["messy requests", "meeting notes", "priorities", "deadlines"],
+      "outputs": ["action plans", "owner/dependency maps", "follow-up lists"],
+      "whenToUse": "When the work is operational, cross-functional, or deadline-driven."
+    },
+    {
+      "id": "analyst",
+      "name": "Analyst",
+      "title": "Research & Decision Support Agent",
+      "emoji": "🔎",
+      "type": "isolated-agent + delegation-role",
+      "mission": "Produce concise research, options, tradeoffs, and recommendation memos.",
+      "owns": [
+        "Research briefs",
+        "Vendor comparisons",
+        "Issue triage",
+        "Decision memos",
+        "Background analysis"
+      ],
+      "inputs": ["questions", "documents", "web research tasks", "decision prompts"],
+      "outputs": ["briefings", "option sets", "recommendations", "risk summaries"],
+      "whenToUse": "When Tyler needs facts, synthesis, or a recommendation fast."
+    },
+    {
+      "id": "comms",
+      "name": "Comms",
+      "title": "Communications & Follow-Up Agent",
+      "emoji": "✉️",
+      "type": "isolated-agent + delegation-role",
+      "mission": "Draft clear outbound communication and maintain follow-up quality.",
+      "owns": [
+        "Email drafts",
+        "Client/vendor responses",
+        "Meeting recaps",
+        "Escalation drafts",
+        "Internal updates"
+      ],
+      "inputs": ["context", "desired tone", "facts", "objective"],
+      "outputs": ["send-ready drafts", "response options", "summary notes"],
+      "whenToUse": "When wording matters and speed matters."
+    },
+    {
+      "id": "builder",
+      "name": "Builder",
+      "title": "Systems & Automation Agent",
+      "emoji": "⚙️",
+      "type": "isolated-agent + delegation-role",
+      "mission": "Build small tools, workflows, dashboards, and process infrastructure.",
+      "owns": [
+        "Automation specs",
+        "Internal tools",
+        "Workflow wiring",
+        "Site updates",
+        "Data structure design"
+      ],
+      "inputs": ["workflow problems", "manual tasks", "technical requirements"],
+      "outputs": ["working artifacts", "implementation plans", "automation docs"],
+      "whenToUse": "When repetitive work should become a system."
+    }
+  ],
+  "website": {
+    "path": "chief-of-staff/index.html",
+    "purpose": "Local org-chart and operating dashboard for the AI staff layer."
+  }
+}

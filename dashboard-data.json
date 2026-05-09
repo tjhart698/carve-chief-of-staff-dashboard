@@ -1,0 +1,109 @@
+{
+  "updatedAt": "2026-05-09T17:45:00-05:00",
+  "owner": {
+    "name": "Tyler Hart",
+    "title": "Owner / CEO"
+  },
+  "leader": {
+    "name": "Carve",
+    "title": "Chief of Staff AI",
+    "emoji": "🛠️"
+  },
+  "agents": [
+    {
+      "id": "carve",
+      "name": "Carve",
+      "emoji": "🛠️",
+      "title": "Chief of Staff AI",
+      "status": "active",
+      "capacity": "high",
+      "focus": "Triage, delegation, decision support"
+    },
+    {
+      "id": "operator",
+      "name": "Operator",
+      "emoji": "📦",
+      "title": "Execution & PM Agent",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Execution plans, owners, deadlines"
+    },
+    {
+      "id": "analyst",
+      "name": "Analyst",
+      "emoji": "🔎",
+      "title": "Research & Decision Support Agent",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Research, options, recommendations"
+    },
+    {
+      "id": "comms",
+      "name": "Comms",
+      "emoji": "✉️",
+      "title": "Communications & Follow-Up Agent",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Drafting, tone, follow-up"
+    },
+    {
+      "id": "builder",
+      "name": "Builder",
+      "emoji": "⚙️",
+      "title": "Systems & Automation Agent",
+      "status": "building",
+      "capacity": "medium",
+      "focus": "Dashboard, automations, tooling"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Launch chief-of-staff dashboard",
+      "description": "Replace the static org chart with a working dashboard for tasks, assignments, and status.",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "builder",
+      "owner": "Carve",
+      "nextAction": "Ship the first live dashboard version and verify local hosting.",
+      "due": "2026-05-09",
+      "tags": ["dashboard", "website"]
+    },
+    {
+      "id": "T-002",
+      "title": "Define delegation operating model",
+      "description": "Keep Carve as the front door and route work internally to specialist agents.",
+      "priority": "high",
+      "status": "done",
+      "assignedTo": "carve",
+      "owner": "Carve",
+      "nextAction": "Use this model for all new work unless a specialist needs direct access later.",
+      "due": "2026-05-09",
+      "tags": ["operating-model"]
+    },
+    {
+      "id": "T-003",
+      "title": "Prepare GitHub Pages deployment",
+      "description": "Publish the dashboard in a separate safe repo so workspace memory and secrets never ship.",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "builder",
+      "owner": "Carve",
+      "nextAction": "Create a dedicated repo and push only the dashboard files.",
+      "due": "2026-05-09",
+      "tags": ["github", "hosting", "security"]
+    },
+    {
+      "id": "T-004",
+      "title": "Start using Carve as command center",
+      "description": "Route requests through one chat instead of managing multiple specialist inboxes.",
+      "priority": "medium",
+      "status": "ready",
+      "assignedTo": "carve",
+      "owner": "Tyler",
+      "nextAction": "Send new requests to Carve and let Carve assign internally.",
+      "due": "2026-05-10",
+      "tags": ["workflow"]
+    }
+  ]
+}
