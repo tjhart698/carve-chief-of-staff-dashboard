@@ -103,6 +103,64 @@
       "whenToUse": "When repetitive work should become a system."
     }
   ],
+  "departments": [
+    {
+      "id": "trading-desk",
+      "name": "Stock Trading Department",
+      "emoji": "📈",
+      "reportsTo": "carve",
+      "purpose": "Run structured bull-vs-bear trade analysis and deliver one final recommendation to Tyler.",
+      "workflow": [
+        "Bull analyst builds the upside case and opportunity view",
+        "Bear analyst builds the downside case and risk view",
+        "Desk lead reviews both presentations and makes the final recommendation to Tyler"
+      ],
+      "leader": {
+        "id": "market-chief",
+        "name": "Market Chief",
+        "title": "Trading Decision Lead",
+        "emoji": "🧭",
+        "stance": "Realist",
+        "mission": "Take in conflicting inputs, pressure-test both sides, and make grounded final recommendations.",
+        "strengths": [
+          "Decision quality under uncertainty",
+          "Separating signal from noise",
+          "Catalyst vs risk balancing",
+          "Clear final calls"
+        ]
+      },
+      "team": [
+        {
+          "id": "bull-analyst",
+          "name": "Bull Analyst",
+          "title": "Opportunity & Upside Analyst",
+          "emoji": "📗",
+          "stance": "Glass half full",
+          "mission": "Find the upside case, positive asymmetry, and reasons a trade could work.",
+          "focus": [
+            "Catalysts",
+            "Momentum / trend support",
+            "Improving fundamentals",
+            "Why the market may be underestimating upside"
+          ]
+        },
+        {
+          "id": "bear-analyst",
+          "name": "Bear Analyst",
+          "title": "Risk & Downside Analyst",
+          "emoji": "📕",
+          "stance": "Glass half empty",
+          "mission": "Surface what can break, what is being missed, and where the downside or hidden risk sits.",
+          "focus": [
+            "Thesis fragility",
+            "Valuation / downside risk",
+            "Macro / liquidity risk",
+            "Reasons not to trade"
+          ]
+        }
+      ]
+    }
+  ],
   "website": {
     "path": "chief-of-staff/index.html",
     "purpose": "Local org-chart and operating dashboard for the AI staff layer."

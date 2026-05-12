@@ -1,7 +1,11 @@
-const STORAGE_KEY = 'carve-chief-of-staff-dashboard-v1';
+const STORAGE_KEY = 'carve-chief-of-staff-dashboard-v2';
 
 function loadSeedData() {
   return JSON.parse(document.getElementById('seed-data').textContent);
+}
+
+function loadOrgData() {
+  return JSON.parse(document.getElementById('org-data').textContent);
 }
 
 function loadData() {
@@ -147,6 +151,68 @@ function renderAgents() {
   }).join('');
 }
 
+function renderOrgChart() {
+  const org = loadOrgData();
+  const root = document.getElementById('org-chart');
+  const coreAgents = org.agents.map(agent => `
+    <article class="org-card org-card-compact">
+      <p class="org-kicker">Core staff</p>
+      <h4>${agent.emoji} ${agent.name}</h4>
+      <p class="agent-title">${agent.title}</p>
+      <p>${agent.mission}</p>
+    </article>
+  `).join('');
+
+  const departments = (org.departments || []).map(dept => `
+    <section class="org-department panel">
+      <div class="org-dept-head">
+        <div>
+          <p class="org-kicker">Department</p>
+          <h3>${dept.emoji} ${dept.name}</h3>
+          <p>${dept.purpose}</p>
+        </div>
+      </div>
+      <div class="org-tree">
+        <article class="org-card org-card-lead">
+          <p class="org-kicker">Decision lead</p>
+          <h4>${dept.leader.emoji} ${dept.leader.name}</h4>
+          <p class="agent-title">${dept.leader.title}</p>
+          <p><strong>${dept.leader.stance}.</strong> ${dept.leader.mission}</p>
+        </article>
+        <div class="org-branch-row">
+          ${dept.team.map(member => `
+            <article class="org-card">
+              <p class="org-kicker">Direct report</p>
+              <h4>${member.emoji} ${member.name}</h4>
+              <p class="agent-title">${member.title}</p>
+              <p><strong>${member.stance}.</strong> ${member.mission}</p>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+  `).join('');
+
+  root.innerHTML = `
+    <div class="org-topline">
+      <article class="org-card org-owner-card">
+        <p class="org-kicker">Owner</p>
+        <h3>${org.owner.name}</h3>
+        <p class="agent-title">${org.owner.title}</p>
+      </article>
+      <div class="org-arrow">↓</div>
+      <article class="org-card org-chief-card">
+        <p class="org-kicker">Chief of staff</p>
+        <h3>${org.leader.emoji} ${org.leader.name}</h3>
+        <p class="agent-title">${org.leader.title}</p>
+        <p>${org.leader.mission}</p>
+      </article>
+    </div>
+    <div class="org-core-grid">${coreAgents}</div>
+    ${departments}
+  `;
+}
+
 function renderLinks() {
   document.getElementById('local-url').textContent = window.location.href;
   document.getElementById('github-url').textContent = 'https://tjhart698.github.io/carve-chief-of-staff-dashboard/';
@@ -154,6 +220,7 @@ function renderLinks() {
 
 function renderAll() {
   renderStats();
+  renderOrgChart();
   renderFilters();
   renderTasks();
   renderAgents();

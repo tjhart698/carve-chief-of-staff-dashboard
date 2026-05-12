@@ -51,7 +51,7 @@ code {
 .lede, .agent-title, .footer-note, .agent-kicker, .task-id, .stat-label, .detail-label {
   color: var(--muted);
 }
-.panel, .agent-card, .stat-card, .item, .task-card {
+.panel, .agent-card, .stat-card, .item, .task-card, .org-card {
   background: rgba(17, 28, 49, 0.92);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -59,13 +59,15 @@ code {
   box-shadow: 0 16px 42px rgba(0,0,0,0.22);
 }
 .section-gap { margin-top: 22px; }
-.stats-grid, .grid.two-up, .agent-grid {
+.stats-grid, .grid.two-up, .agent-grid, .org-core-grid, .org-branch-row {
   display: grid;
   gap: 18px;
 }
 .stats-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 .grid.two-up { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .agent-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.org-core-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 18px; }
+.org-branch-row { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 18px; }
 .task-layout {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
@@ -157,6 +159,50 @@ label span {
   color: var(--muted);
 }
 .form-panel { height: fit-content; }
+.org-chart {
+  display: grid;
+  gap: 18px;
+}
+.org-topline {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+.org-arrow {
+  color: var(--accent);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.org-owner-card, .org-chief-card, .org-card-lead {
+  width: min(100%, 560px);
+}
+.org-chief-card {
+  border-color: rgba(122, 224, 179, 0.28);
+}
+.org-kicker {
+  margin: 0 0 8px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.76rem;
+}
+.org-card-compact {
+  padding: 18px;
+}
+.org-department {
+  padding: 0;
+  overflow: hidden;
+}
+.org-dept-head {
+  padding: 22px 22px 0;
+}
+.org-tree {
+  padding: 0 22px 22px;
+}
+.org-card-lead {
+  margin-top: 12px;
+  border-color: rgba(121, 168, 255, 0.35);
+}
 @media (max-width: 900px) {
   .task-layout { grid-template-columns: 1fr; }
 }

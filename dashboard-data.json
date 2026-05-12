@@ -54,6 +54,33 @@
       "status": "building",
       "capacity": "medium",
       "focus": "Dashboard, automations, tooling"
+    },
+    {
+      "id": "market-chief",
+      "name": "Market Chief",
+      "emoji": "🧭",
+      "title": "Trading Decision Lead",
+      "status": "active",
+      "capacity": "medium",
+      "focus": "Final trade calls after bull-vs-bear review"
+    },
+    {
+      "id": "bull-analyst",
+      "name": "Bull Analyst",
+      "emoji": "📗",
+      "title": "Opportunity & Upside Analyst",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Upside case, catalysts, asymmetric opportunity"
+    },
+    {
+      "id": "bear-analyst",
+      "name": "Bear Analyst",
+      "emoji": "📕",
+      "title": "Risk & Downside Analyst",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Risk map, downside, fragility, reasons not to trade"
     }
   ],
   "tasks": [
@@ -104,6 +131,18 @@
       "nextAction": "Send new requests to Carve and let Carve assign internally.",
       "due": "2026-05-10",
       "tags": ["workflow"]
+    },
+    {
+      "id": "T-005",
+      "title": "Stand up stock trading department",
+      "description": "Establish a three-agent trading desk with a realist decision lead over one bullish analyst and one bearish analyst.",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "market-chief",
+      "owner": "Carve",
+      "nextAction": "Use the bull-vs-bear review flow for new trade recommendations.",
+      "due": "2026-05-12",
+      "tags": ["trading", "delegation"]
     }
   ]
 }

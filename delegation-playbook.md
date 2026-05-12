@@ -55,6 +55,33 @@ Use this as Carve's routing logic.
 - dependencies
 - test or verification step
 
+### Send stock trade analysis to the Trading Desk when:
+- the task is evaluating a stock or ETF trade idea
+- Tyler wants a recommendation on whether to enter, avoid, hold, trim, or exit
+- the upside case and downside case both need to be pressure-tested
+
+**Trading Desk structure:**
+1. **Bull Analyst** builds the optimistic case
+   - catalysts
+   - upside scenario
+   - why the market may be missing the opportunity
+2. **Bear Analyst** builds the risk case
+   - downside scenario
+   - broken thesis conditions
+   - macro, valuation, liquidity, or execution risk
+3. **Market Chief** reviews both and makes the final recommendation to Tyler
+   - recommendation: yes / no / wait
+   - best entry framing if yes
+   - key reason if no
+   - what would change the call
+
+**Expected output to Tyler:**
+- final recommendation
+- bull case summary
+- bear case summary
+- key risks
+- trigger that would change the recommendation
+
 ## Escalate to Tyler when:
 - money leaves the business
 - a legal / tax / regulatory issue is material
