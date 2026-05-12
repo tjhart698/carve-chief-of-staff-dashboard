@@ -10,6 +10,7 @@ Use this whenever Tyler asks for a trade recommendation or when Carve proactivel
 - `trading/investing-thesis-2026-05-07.md`
 - `chief-of-staff/trading-desk-charter.md`
 - `chief-of-staff/trading-desk-review-workflow.md`
+- `chief-of-staff/trading-desk-daily-ops.md`
 - live quote / account context when needed
 
 ## Operating Sequence
