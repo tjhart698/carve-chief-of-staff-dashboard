@@ -57,6 +57,8 @@ Use this as Carve's routing logic.
 
 **Governing files:**
 - `chief-of-staff/it-department-charter.md`
+- `chief-of-staff/it-department-operating-rhythm.md`
+- `chief-of-staff/it-department-review-checklist.md`
 
 #### CITO — Chief Information Technology Officer
 **Role:** Department lead for IT strategy, reliability, and security posture.
