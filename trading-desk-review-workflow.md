@@ -11,6 +11,13 @@ Use this workflow whenever Tyler asks for a stock or ETF trade recommendation.
 
 ## Workflow
 
+## Standard Templates
+- Bull Analyst: `chief-of-staff/trading-desk-bull-analyst-template.md`
+- Bear Analyst: `chief-of-staff/trading-desk-bear-analyst-template.md`
+- Market Chief: `chief-of-staff/trading-desk-market-chief-template.md`
+- Tyler-facing final memo: `chief-of-staff/trading-desk-final-recommendation-template.md`
+
+
 ### Step 1 — Charter check
 Before analysis begins, confirm:
 - instrument is allowed
@@ -44,6 +51,8 @@ Market Chief reviews both and produces one final call:
 - **PASS** = should not be taken under the current mandate
 
 ### Step 5 — Tyler-facing output
+Use `chief-of-staff/trading-desk-final-recommendation-template.md`.
+
 The final memo to Tyler should include:
 - ticker
 - action

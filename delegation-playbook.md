@@ -58,6 +58,7 @@ Use this as Carve's routing logic.
 **Governing files:**
 - `chief-of-staff/trading-desk-charter.md`
 - `chief-of-staff/trading-desk-review-workflow.md`
+- `chief-of-staff/trading-desk-live-recommendation-workflow.md`
 - `trading/trading-mandate.md`
 - `trading/investing-thesis-2026-05-07.md`
 
