@@ -159,7 +159,9 @@ function renderOrgChart() {
       <p class="org-kicker">Core staff</p>
       <h4>${agent.emoji} ${agent.name}</h4>
       <p class="agent-title">${agent.title}</p>
+      <p><strong>Role:</strong> ${agent.role || 'not defined'}</p>
       <p>${agent.mission}</p>
+      ${agent.responsibilities ? `<div class="org-list-block"><p class="detail-label">Responsibilities</p><ul>${agent.responsibilities.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
     </article>
   `).join('');
 
@@ -177,7 +179,9 @@ function renderOrgChart() {
           <p class="org-kicker">Decision lead</p>
           <h4>${dept.leader.emoji} ${dept.leader.name}</h4>
           <p class="agent-title">${dept.leader.title}</p>
+          <p><strong>Role:</strong> ${dept.leader.role || dept.leader.stance}</p>
           <p><strong>${dept.leader.stance}.</strong> ${dept.leader.mission}</p>
+          ${dept.leader.responsibilities ? `<div class="org-list-block"><p class="detail-label">Responsibilities</p><ul>${dept.leader.responsibilities.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
         </article>
         <div class="org-branch-row">
           ${dept.team.map(member => `
@@ -185,7 +189,9 @@ function renderOrgChart() {
               <p class="org-kicker">Direct report</p>
               <h4>${member.emoji} ${member.name}</h4>
               <p class="agent-title">${member.title}</p>
+              <p><strong>Role:</strong> ${member.role || member.stance}</p>
               <p><strong>${member.stance}.</strong> ${member.mission}</p>
+              ${member.responsibilities ? `<div class="org-list-block"><p class="detail-label">Responsibilities</p><ul>${member.responsibilities.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
             </article>
           `).join('')}
         </div>
@@ -205,7 +211,9 @@ function renderOrgChart() {
         <p class="org-kicker">Chief of staff</p>
         <h3>${org.leader.emoji} ${org.leader.name}</h3>
         <p class="agent-title">${org.leader.title}</p>
+        <p><strong>Role:</strong> ${org.leader.role || 'not defined'}</p>
         <p>${org.leader.mission}</p>
+        ${org.leader.accountableFor ? `<div class="org-list-block"><p class="detail-label">Accountable for</p><ul>${org.leader.accountableFor.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
       </article>
     </div>
     <div class="org-core-grid">${coreAgents}</div>

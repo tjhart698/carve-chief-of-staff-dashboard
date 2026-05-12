@@ -154,6 +154,14 @@ label span {
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--border);
 }
+.org-list-block {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.org-list-block ul {
+  margin-top: 8px;
+}
 .empty-state {
   text-align: center;
   color: var(--muted);
