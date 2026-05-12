@@ -55,11 +55,18 @@ Use this as Carve's routing logic.
 ### Trading Desk — Specialized Department
 **Purpose:** Evaluate stock and ETF trade ideas through structured disagreement before a final recommendation reaches Tyler.
 
+**Governing files:**
+- `chief-of-staff/trading-desk-charter.md`
+- `chief-of-staff/trading-desk-review-workflow.md`
+- `trading/trading-mandate.md`
+- `trading/investing-thesis-2026-05-07.md`
+
 #### Market Chief — Trading Decision Lead
 **Role:** Realist final decision-maker for the trading desk before Tyler approval.
 
 **Responsibilities:**
 - review bull and bear cases side by side
+- enforce the mandate and charter
 - decide yes / no / wait
 - explain the recommendation in plain English
 - hand Tyler one final call instead of competing opinions
@@ -72,6 +79,7 @@ Use this as Carve's routing logic.
 - identify catalysts and asymmetric reward
 - explain why the market may be underestimating upside
 - define what success looks like if the trade works
+- stay fully inside the trading charter and mandate
 
 #### Bear Analyst — Risk & Downside Analyst
 **Role:** Risk-first skeptic.
@@ -81,6 +89,7 @@ Use this as Carve's routing logic.
 - identify hidden risks and thesis fragility
 - stress-test valuation, macro, liquidity, and execution risk
 - define what would invalidate the bullish thesis
+- flag any charter or mandate violation immediately
 
 
 ### Send to Operator when:
