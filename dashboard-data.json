@@ -81,6 +81,42 @@
       "status": "ready",
       "capacity": "medium",
       "focus": "Risk map, downside, fragility, reasons not to trade"
+    },
+    {
+      "id": "cito",
+      "name": "CITO",
+      "emoji": "🛡️",
+      "title": "Chief Information Technology Officer",
+      "status": "active",
+      "capacity": "medium",
+      "focus": "IT strategy, security posture, reliability priorities"
+    },
+    {
+      "id": "cybersecurity-specialist",
+      "name": "Cybersecurity Specialist",
+      "emoji": "🔐",
+      "title": "Security & Hardening Specialist",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Hardening, access review, exposure reduction, incident readiness"
+    },
+    {
+      "id": "reliability-engineer",
+      "name": "Reliability Engineer",
+      "emoji": "📡",
+      "title": "Infrastructure & Reliability Engineer",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Monitoring, uptime, backups, recovery readiness"
+    },
+    {
+      "id": "it-ops-admin",
+      "name": "IT Ops Admin",
+      "emoji": "🧰",
+      "title": "IT Operations Administrator",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Routine upkeep, access hygiene, inventories, documentation"
     }
   ],
   "tasks": [
@@ -143,6 +179,18 @@
       "nextAction": "Use the bull-vs-bear review flow for new trade recommendations.",
       "due": "2026-05-12",
       "tags": ["trading", "delegation"]
+    },
+    {
+      "id": "T-006",
+      "title": "Stand up IT department",
+      "description": "Create an IT department led by a CITO with cybersecurity, reliability, and operations coverage.",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "cito",
+      "owner": "Carve",
+      "nextAction": "Define the IT charter, roles, and maintenance/security operating model.",
+      "due": "2026-05-12",
+      "tags": ["it", "security", "reliability"]
     }
   ]
 }

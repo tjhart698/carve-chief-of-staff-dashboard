@@ -229,6 +229,42 @@
       "status": "ready",
       "capacity": "medium",
       "focus": "Risk map, downside, fragility, reasons not to trade"
+    },
+    {
+      "id": "cito",
+      "name": "CITO",
+      "emoji": "🛡️",
+      "title": "Chief Information Technology Officer",
+      "status": "active",
+      "capacity": "medium",
+      "focus": "IT strategy, security posture, reliability priorities"
+    },
+    {
+      "id": "cybersecurity-specialist",
+      "name": "Cybersecurity Specialist",
+      "emoji": "🔐",
+      "title": "Security & Hardening Specialist",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Hardening, access review, exposure reduction, incident readiness"
+    },
+    {
+      "id": "reliability-engineer",
+      "name": "Reliability Engineer",
+      "emoji": "📡",
+      "title": "Infrastructure & Reliability Engineer",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Monitoring, uptime, backups, recovery readiness"
+    },
+    {
+      "id": "it-ops-admin",
+      "name": "IT Ops Admin",
+      "emoji": "🧰",
+      "title": "IT Operations Administrator",
+      "status": "ready",
+      "capacity": "medium",
+      "focus": "Routine upkeep, access hygiene, inventories, documentation"
     }
   ],
   "tasks": [
@@ -291,6 +327,18 @@
       "nextAction": "Use the bull-vs-bear review flow for new trade recommendations.",
       "due": "2026-05-12",
       "tags": ["trading", "delegation"]
+    },
+    {
+      "id": "T-006",
+      "title": "Stand up IT department",
+      "description": "Create an IT department led by a CITO with cybersecurity, reliability, and operations coverage.",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "cito",
+      "owner": "Carve",
+      "nextAction": "Define the IT charter, roles, and maintenance/security operating model.",
+      "due": "2026-05-12",
+      "tags": ["it", "security", "reliability"]
     }
   ]
 }
@@ -323,6 +371,74 @@
     {"id":"builder","name":"Builder","title":"Systems & Automation Agent","emoji":"⚙️","role":"Systems builder and automation owner.","mission":"Build small tools, workflows, dashboards, and process infrastructure.","responsibilities":["Turn repetitive work into systems","Implement small technical solutions quickly","Maintain dashboards and internal tooling","Create repeatable workflows with verification steps"]}
   ],
   "departments": [
+    {
+      "id": "it-department",
+      "name": "IT Department",
+      "emoji": "🖥️",
+      "purpose": "Maintain the systems we create and reduce cybersecurity risk across Tyler's operating environment.",
+      "leader": {
+        "id": "cito",
+        "name": "CITO",
+        "title": "Chief Information Technology Officer",
+        "emoji": "🛡️",
+        "stance": "Risk-aware operator",
+        "role": "Final decision-maker for internal IT priorities and technical risk escalation before Carve.",
+        "mission": "Lead system reliability, maintenance, and security posture across Tyler's AI operating environment.",
+        "responsibilities": [
+          "Set IT priorities and maintenance standards",
+          "Coordinate the IT team",
+          "Escalate meaningful technical and cyber risk",
+          "Translate technical issues into practical business decisions"
+        ]
+      },
+      "team": [
+        {
+          "id": "cybersecurity-specialist",
+          "name": "Cybersecurity Specialist",
+          "title": "Security & Hardening Specialist",
+          "emoji": "🔐",
+          "stance": "Defensive and skeptical",
+          "role": "Security lead for threat reduction and hardening.",
+          "mission": "Protect the environment from breach, misuse, exposure, and preventable security failures.",
+          "responsibilities": [
+            "Identify vulnerabilities and insecure configurations",
+            "Review access, secrets, exposure, and misuse risk",
+            "Recommend practical hardening steps",
+            "Help define containment and incident-response actions"
+          ]
+        },
+        {
+          "id": "reliability-engineer",
+          "name": "Reliability Engineer",
+          "title": "Infrastructure & Reliability Engineer",
+          "emoji": "📡",
+          "stance": "Calm and methodical",
+          "role": "Reliability owner for uptime, monitoring, and recovery readiness.",
+          "mission": "Keep systems healthy, observable, recoverable, and resilient.",
+          "responsibilities": [
+            "Maintain service reliability",
+            "Improve observability and alerting",
+            "Validate backups and recovery paths",
+            "Reduce single points of failure"
+          ]
+        },
+        {
+          "id": "it-ops-admin",
+          "name": "IT Ops Admin",
+          "title": "IT Operations Administrator",
+          "emoji": "🧰",
+          "stance": "Organized and preventive",
+          "role": "Day-to-day maintenance and access-control operator.",
+          "mission": "Handle routine upkeep, access hygiene, and operational documentation so systems stay clean and maintainable.",
+          "responsibilities": [
+            "Manage routine upkeep tasks",
+            "Maintain access hygiene and inventories",
+            "Track update and tooling needs",
+            "Keep documentation and runbooks current"
+          ]
+        }
+      ]
+    },
     {
       "id": "trading-desk",
       "name": "Stock Trading Department",

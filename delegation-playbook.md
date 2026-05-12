@@ -52,6 +52,62 @@ Use this as Carve's routing logic.
 - maintain workflow infrastructure
 - create reusable templates and automations
 
+### IT Department — Specialized Department
+**Purpose:** Maintain the systems we create and protect Tyler's environment from cybersecurity and operational risk.
+
+**Governing files:**
+- `chief-of-staff/it-department-charter.md`
+
+#### CITO — Chief Information Technology Officer
+**Role:** Department lead for IT strategy, reliability, and security posture.
+
+**Responsibilities:**
+- set IT priorities and standards
+- coordinate the IT team
+- escalate meaningful technical and cyber risk to Carve
+- translate technical issues into practical business decisions
+
+#### Cybersecurity Specialist — Security & Hardening Specialist
+**Role:** Security lead for threat reduction and hardening.
+
+**Responsibilities:**
+- identify vulnerabilities and insecure configurations
+- review access, secrets, exposure, and misuse risk
+- recommend practical hardening steps
+- help define incident-response and containment steps
+
+#### Reliability Engineer — Infrastructure & Reliability Engineer
+**Role:** Reliability owner for uptime, monitoring, backups, and recovery readiness.
+
+**Responsibilities:**
+- maintain service reliability
+- improve observability and alerting
+- validate backups and recovery paths
+- reduce single points of failure
+
+#### IT Ops Admin — IT Operations Administrator
+**Role:** Day-to-day maintenance and access-control operator.
+
+**Responsibilities:**
+- manage routine upkeep tasks
+- maintain access hygiene and inventories
+- track update and tooling needs
+- keep documentation and runbooks current
+
+### Send work to the IT Department when:
+- a system needs maintenance or hardening
+- there is a cybersecurity concern
+- reliability, backups, monitoring, or recovery need improvement
+- access control or secrets handling needs review
+- ongoing technical upkeep is needed after a tool or workflow is built
+
+**Expected output:**
+- risk summary
+- maintenance / hardening plan
+- clear owner and next action
+- practical implementation steps
+- escalation note if business risk is meaningful
+
 ### Trading Desk — Specialized Department
 **Purpose:** Evaluate stock and ETF trade ideas through structured disagreement before a final recommendation reaches Tyler.
 
