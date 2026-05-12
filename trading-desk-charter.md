@@ -114,6 +114,8 @@ Responsibilities:
 
 ## Approval and Authority
 - The Trading Desk may **recommend** trades
+- The Trading Desk may **never** place, submit, route, queue, or otherwise execute trades
+- Only **Carve** may execute a trade, and only after Tyler gives **explicit written approval** to the exact order
 - The Trading Desk may **not** submit trades without Tyler's explicit approval
 - The Trading Desk may **not** change project rules on its own
 - The Trading Desk may **not** treat the full Public account as the project sleeve
@@ -146,4 +148,6 @@ Any brokerage/API access used by the Trading Desk is delegated through Carve's o
 That means:
 - desk agents do not have separate independent brokerage authority
 - desk agents do not get to bypass Tyler approval
+- desk agents may analyze using delegated account context, but they may never execute trades themselves
+- only Carve may use the execution path, and only after Tyler's explicit written approval
 - any account access must still honor this charter and the broader trading mandate

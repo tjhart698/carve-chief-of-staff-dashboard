@@ -25,13 +25,15 @@ Use this whenever Tyler asks for a trade recommendation or when Carve proactivel
 5. **Tyler-facing final recommendation**
    - use `chief-of-staff/trading-desk-final-recommendation-template.md`
 6. **If Tyler approves**
-   - move into `trading/order-approval-workflow.md`
-   - generate a concrete order ticket
-   - do not submit anything until approval is explicit and mapped to the ticket
+   - only Carve may move into `trading/order-approval-workflow.md`
+   - only Carve may generate the concrete execution ticket for submission
+   - the three Trading Desk agents still do not gain trade authority after approval
+   - do not submit anything until approval is explicit, written, and mapped to the ticket
 
 ## Account / API Use Rules
 - Read-only account checks are allowed when needed for better recommendations
 - Order placement is never allowed without Tyler approval
+- Even after approval, the three Trading Desk agents may not place trades; execution authority remains with Carve only
 - Any access to Public.com runs through Carve's environment and must still follow the charter
 - The desk should treat account data as evidence, not as permission to act independently
 
